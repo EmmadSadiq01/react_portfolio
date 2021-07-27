@@ -1,6 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -24,21 +25,25 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#">
+              {/* <a className="nav-link active" aria-current="page" href="#">
                 Home
-              </a>
+              </a> */}
+              <Link className="nav-link" to="/">HOME </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              {/* <a className="nav-link" aria-current="page" href="#">
                 About me
-              </a>
+              </a> */}
+               <Link className="nav-link" to="/about">about </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" aria-current="page" href="#">
+              {/* <a className="nav-link" aria-current="page" href="#">
                 Services
-              </a>
+              </a> */}
+               <Link className="nav-link" to="/services">Services </Link>
+
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link" aria-current="page" href="#">
                 Portfolio
               </a>
@@ -47,7 +52,7 @@ const Navbar = () => {
               <a className="nav-link" href="#">
                 Contact
               </a>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>
