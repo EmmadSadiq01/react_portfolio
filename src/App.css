@@ -4,8 +4,11 @@
   --primary-white : #fff;
   --primary-orange : #f9ab00;
   --primary-dark : #212529;
+  --primary-Light-dark : #212529e6;
 }
-
+div#root {
+  margin-top: 10vh;
+}
 body{
   font-family: 'Roboto Condensed', sans-serif;
   box-sizing: border-box;
@@ -210,4 +213,19 @@ background-color: var(--primary-orange);
 }
 .service_card:hover p {
   color: white !important;
+}
+
+
+
+.chooseUs {
+  padding: 60px 0px;
+}
+
+.chooseUs {
+  padding: 60px 0px;
+  background-color: var(--primary-Light-dark);
+  color: white;
+}
+.chooseUs h2{
+  color: var(--primary-orange);
 }
