@@ -1,9 +1,17 @@
+:root{
+  --primary-white : #fff;
+  --primary-theme-color : #4e6582;
+  --primary-dark : #212529;
+  --primary-Light-dark : #212529e6;
+  --primary-heading : rgb(168 195 17);
+}
+
 header nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    background-color: #5d4954;
+    background-color: var(--primary-theme-color);
     font-family: "Poppins", sans-serif;
     position: fixed;
       top: 0px;

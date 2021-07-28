@@ -2,9 +2,10 @@
 
 :root{
   --primary-white : #fff;
-  --primary-orange : #f9ab00;
+  --primary-orange : #4e6582;
   --primary-dark : #212529;
   --primary-Light-dark : #212529e6;
+  --primary-heading : rgb(168 195 17);
 }
 div#root {
   margin-top: 10vh;
@@ -12,6 +13,24 @@ div#root {
 body{
   font-family: 'Roboto Condensed', sans-serif;
   box-sizing: border-box;
+}
+
+.secPad{
+  padding: 60px 0px;
+}
+
+.dark{
+background-color: var(--primary-dark);
+}
+.light-dark{
+  background-color: var(--primary-Light-dark);
+
+}
+.primary-heading{
+  color: var(--primary-heading);
+}
+.white{
+  color: white;
 }
 /* ------------------------- */
 /*        navbar             */
@@ -64,7 +83,7 @@ border-top: 1px solid var(--primary-orange);
 }
 
 .header-info h2{
-color: var(--primary-orange);
+color: var(--primary-heading);
 text-transform: uppercase;
 }
 
@@ -78,14 +97,14 @@ text-transform: uppercase;
 .btn-outline-orange{
   padding: 10px 20px;
   border-radius: 5px;
-  border: 1px solid var(--primary-orange);
+  border: 1px solid var(--primary-heading);
   background-color: transparent;
   color: white;
   transition: all 0.4s ease-in-out;
 }
 
 .btn-outline-orange:hover{
-background-color: var(--primary-orange);
+background-color: var(--primary-heading);
 }
 
 /* home */
@@ -96,11 +115,11 @@ background-color: var(--primary-orange);
 }
 
 .quality h3{
-    color: white;
+    color: var(--primary-heading);
     font-size: 36px;
 }
 .quality p{
-    color: var(--primary-orange);
+    color: white;
 }
 
 
@@ -114,6 +133,15 @@ background-color: var(--primary-orange);
   transition: 0.3s;
   box-shadow: -2px 23px 28px rgb(0 0 0 / 15%);
 }
+.middle_card{
+  background-color: var(--primary-orange) ;
+}
+
+@media screen and (max-width: 770px) {
+  .middle_card{
+    background-color: transparent;
+  }
+}
 
 .service_card span:nth-child(1) {
   position: absolute;
@@ -123,6 +151,8 @@ background-color: var(--primary-orange);
   height: 2px;
   background: var(--primary-orange);
 }
+
+
 .service_card span:nth-child(2) {
   position: absolute;
   top: 0;
@@ -154,7 +184,7 @@ background-color: var(--primary-orange);
   position: relative;
   z-index: 2;
   font-style: normal;
-  color: rgb(17, 110, 195);
+  color: var(--primary-heading);
   font-family: "Lato" sans-serif;
   font-weight: bold;
 }
@@ -183,14 +213,15 @@ background-color: var(--primary-orange);
 }
 
 .service_card p {
-  color: black;
+  color: white;
   position: relative;
   z-index: 2;
   z-index: 1;
-  font-size: 13px;
+  font-size: 15px;
   margin-top: 5%;
   font-family: inherit;
   transition: all 0.4s ease-in-out;
+  letter-spacing: 1px;
 }
 
 .service_card:before {
@@ -227,5 +258,37 @@ background-color: var(--primary-orange);
   color: white;
 }
 .chooseUs h2{
-  color: var(--primary-orange);
+  color: var(--primary-heading);
+}
+
+
+
+
+/* progressbar */
+
+.skillsBar h3 span{
+font-weight: bolder;
+color: white;
+}
+
+/* .progress_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+} */
+.progress_title h4 {
+  margin-bottom: 0px;
+  /* margin-right: 20px; */
+  font-size: 14px;
+    letter-spacing: 1.5px;
+    text-align: right ;
+}
+.myProgress {
+  flex: 1;
+}
+.progress{
+  background-color: #34383a;
+}
+.progress-bar{
+  background-color: var(--primary-heading);
 }

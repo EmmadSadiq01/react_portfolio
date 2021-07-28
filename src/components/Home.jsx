@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./Header";
+import Skills from "./Skills";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faNewspaper} from '@fortawesome/free-solid-svg-icons'
 
@@ -49,7 +50,7 @@ const Home = () => {
           </div>
         
           <div className="col-md-4">
-              <div className="service_card">
+              <div className="service_card middle_card">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -109,7 +110,7 @@ const Home = () => {
           </div>
         
           <div className="col-md-4">
-              <div className="service_card">
+              <div className="service_card middle_card">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -151,6 +152,8 @@ const Home = () => {
         </div>
       </div>
       </div>
+    <Skills/>
+    
     </div>
   );
 };
