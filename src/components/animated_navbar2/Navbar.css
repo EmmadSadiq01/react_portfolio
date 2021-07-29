@@ -1,6 +1,7 @@
 :root{
   --primary-white : #fff;
   --primary-theme-color : #4e6582;
+  --primary-theme-color-2 : #4e65829d;
   --primary-dark : #212529;
   --primary-Light-dark : #212529e6;
   --primary-heading : rgb(168 195 17);
@@ -84,7 +85,7 @@ header nav {
       right: 0px;
       height: 92vh;
       top: 8vh;
-      background-color: #5d4954cf;
+      background-color: var(--primary-theme-color-2);
       display: flex;
       flex-direction: column;
       align-items: center;
