@@ -6,6 +6,7 @@
   --primary-dark : #212529;
   --primary-Light-dark : #212529e6;
   --primary-heading : rgb(168 195 17);
+  --primary-light-blue : #c7d9f1;
 }
 div#root {
   margin-top: 10vh;
@@ -67,15 +68,17 @@ border-top: 1px solid var(--primary-orange);
 /* -------------------------- */
 
 .header-wrapper{
-  position: relative;
+  position: fixed;
+  width: 100%;
   background: url(images/bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
-  height: 92vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  top: 0px;
 }
 
 .header-info{
@@ -83,7 +86,9 @@ border-top: 1px solid var(--primary-orange);
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all 0.4s ease-in-out;
 }
+
 
 .header-info h2{
 color: var(--primary-heading);
@@ -111,6 +116,12 @@ background-color: var(--primary-heading);
 }
 
 /* home */
+
+.main-wrapper {
+  position: relative;
+  top: 100vh;
+  
+}
 .quality{
   padding: 50px 0;
   background: var(--primary-dark);
@@ -264,7 +275,13 @@ background-color: var(--primary-heading);
   color: var(--primary-heading);
 }
 
-
+.mySkills {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 
 /* progressbar */

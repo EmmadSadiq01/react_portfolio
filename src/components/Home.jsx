@@ -3,6 +3,7 @@ import Header from "./Header";
 import Skills from "./Skills";
 
 import ServicesCards from "./ServicesCards";
+import Portfolio from "./portfolio/Portfolio";
 
 const Home = () => {
   const services_list = [{ icon: "fa-newspaper", title: "logo designing", desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum natus ut dolore eaque error possimus earum, aliquam pariatur, similique quidem aspernatur aut omnis architecto voluptatem. Reiciendis maiores aliquid cum.", middle: false },
@@ -14,6 +15,8 @@ const Home = () => {
   return (
     <div>
       <Header />
+      
+      <div className="main-wrapper">
       <div className="quality">
         <h3>Premium Quality Web Design & Development Solutions</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro illum natus ut dolore eaque error possimus earum, aliquam pariatur, similique quidem aspernatur aut omnis architecto voluptatem. Reiciendis maiores aliquid cum.
@@ -44,7 +47,9 @@ const Home = () => {
         </div>
       </div>
       <Skills />
+      <Portfolio/>
 
+    </div>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar2 = () => {
     const [click, setClick] = useState(false);
+    const [Navbar, setNavbar] = useState(false);
     const handleClick = () => {
         setClick(!click);
         const NavLinks = document.querySelectorAll(".nav-link li")
@@ -16,6 +17,15 @@ const Navbar2 = () => {
         })
 
     }
+const changeBackground = () =>{
+    if(window.scrollY >= 80){
+        setNavbar(true)
+    }
+    else{
+        setNavbar(false)
+    }
+}
+    window.addEventListener('scroll',changeBackground)
     // const HideMenu = () =>{
     //     setClick(false);
     //     const NavLinks = document.querySelectorAll(".nav-link li")
@@ -31,7 +41,7 @@ const Navbar2 = () => {
 
     return (
         <header>
-            <nav>
+            <nav className={(Navbar)?"Navactive":""}>
                 <div className="logo">
                     <h4><a href="#home" className="scroll-link">EmDev</a></h4>
                 </div>

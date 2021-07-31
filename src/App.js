@@ -5,7 +5,7 @@ import "./App.css";
 import Home from "./components/Home";
 import Services from "./components/Services";
 import About from "./components/About";
-import Navbar1 from "./components/Animated_navbar/Navbar1";
+// import Navbar1 from "./components/Animated_navbar/Navbar1";
 import Navbar2 from "./components/animated_navbar2/Navbar2";
 
 function App() {
